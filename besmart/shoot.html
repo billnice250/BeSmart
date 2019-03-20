@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone-no">
+	<meta name="viewport" content="user-scalable =no,initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,
+	height=device-height,target-densitydpi=device-dpi">
+	<title>BeSMART</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css"> <!-- styling sheet-->
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.0.css">
+</head>
+<body>
+<section data-role="page" id="instructions">
+	
+
+    <div data-role="header"  id="title" data-theme="a" >Instructions</div><!-- the welcoming screen -->
+    <div data-role="content">
+    <h2 > "You've to swipe the Arrow facing the right Answer"</h2>
+    <ul>
+    <li id="left"><h4>swipe left</h4><img src="images/aroow_final_left.png"  class="left_right"></li>
+        <li  id="right"><h4>swipe right</h4><img src="images/aroow_final_right.png" class="left_right"></li>
+    <li id="center"><h4>swipe up</h4s><img src="images/aroow_final_up.png" class="left_right"></li>
+
+
+    </ul>
+    	
+    	    	
+        <a href="#shooting" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-inline="true" data-theme="b" id="continue_button" data-transition="slide">Continue</a>	    	    	
+
+
+    </div>
+    		
+</section>
+<section data-role="page" id="shooting">
+	<div id="cvr"><img  id="hill" src="images/greenhill.png" ><div id="shadow"></div></div> <!-- greenhills background image-->
+	<a href="index.html" rel="external" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true"  id="homebutton" data-theme="b"></a>
+	<a href="#" data-role="button" data-icon="back" data-iconpos="left" data-inline="true"  id="restartbutton" data-theme="b">restart</a>
+
+    <div id="tryagain_div">
+    <a href="shoot.html" rel="external"><img class="restart" src="images/RESTART.png"></a> <!--restart button-->
+    <img src="images/tryagain.png" id="tryagain"> 
+     </div> <!-- tryagain  screen-->
+	<div id="goodjob_div">
+		 <a href="shoot.html" rel="external"><img class="restart"  src="images/RESTART.png"></a> <!--restart button-->
+		<img src="images/goodjob.png" id="goodjob"> 
+	</div> <!-- the excellent screen-->
+
+
+
+
+
+
+<div id="count_marks_nmb">
+        <span>Smart Coins:</span>
+</div>
+<a  data-theme="b" data-role="button" data-inline="false" id="count_marks_nmb_display"></a>
+<div id="timer">
+        <span>Timer(s)</span>
+</div>
+<a  data-theme="b" data-role="button" data-inline="true" id="timer_display"></a>
+
+
+
+  	<img src="images/clouds.png" id="clud1">
+	<img src="images/clouds.png" id="clud3"> <!-- pics of clouds-->
+	<img src="images/clouds.png" id="clud2">
+    <img src="images/Sun.png"  id="sun">
+<div>
+	<div class="questions" id="quest_box"></div> <!-- the box containing  the question -->
+
+	<a href="#" id="duck"><img id="duck_image" src="images/duck_empty.png"></a> <!-- the duck with a bag of coins-->
+
+	    <h1 class="ans1"></h1>
+		<h1 class="ans2"></h1> <!-- tags containing answers -->
+		<h1 class="ans3"></h1>
+
+    <img src="images/Coin.png" id="coin"> <!--coin-->
+    <img src="images/Coin.png" id="coin2"> <!--coin-->
+    <img src="images/Coin.png" id="coin3"><!--coin-->
+
+	<img src="images/egg1.png" class="egg_left" id="left_egg">
+	<img src="images/egg1.png" class="egg_center" id="centered_egg"> <!-- three eggs-->
+	<img src="images/egg1.png" class="egg_right" id="right_egg">
+	
+	<img src="images/aroow_final_left.png" class="arrw_same_prop arrow_left">
+	<img src="images/aroow_final_up.png" class="arrw_same_prop arrow_center"> <!-- three arrows_pics -->
+	<img src="images/aroow_final_right.png" class="arrw_same_prop arrow_right">
+</div>
+</section>
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.0.min.js"></script>
+   <script type="text/javascript"src="js/jquery-ui-1.10.4.min.js"></script>
+   <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>       <!-- linking the js plugins and files used-->
+   <script type="text/javascript" src="js/script.js"></script>
+   
+<script>
+
+</script>
+</body>
+</html>

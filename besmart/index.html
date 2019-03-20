@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone-no">
+	<meta name="viewport" content="user-scalable =no,initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,
+	height=device-height,target-densitydpi=device-dpi">
+	<title>BeSMART</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.0.css">
+	
+</head>
+<body>
+    <div>
+	<div data-role="page" id="main_box">
+
+
+	<img class="headimage" src="images/besmart new.png">
+	<div  class="bgimg"><img src="images/backgd_sun.gif"></div>
+	<a href="#game_box" id="kiny" data-transition="fade"><img src="images/games.png"></a>
+	<a href="#cover_howto" id="eng" data-transition="fade"><img src="images/settings.png"></a>
+	<a href="#cover_credits" id="fre" data-transition="fade"><img src="images/credits.png"></a>
+  
+   </div>
+
+   <div data-role="page" id="cover_credits">
+   <img src="images/credits_page.png" id="credits_page">
+   </div>
+
+   <div data-role="page" id="cover_howto">
+	<img id="howtoplay_page" src="images/howtoplay_page.png">
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+	<div data-role="page" id="game_box">
+
+	<img class="headimage" src="images/besmart new.png">
+	<div  class="bgimg"><img src="images/backgd_sun.gif"></div>
+	<a href="#lang_box" id="games" data-transition="fade"><img src="images/trivia2.png"></a>
+	<a href="shoot.html" id="settings" rel="external" data-transition="slide"><img src="images/numbers_shootout.png"></a>
+
+  
+   </div> 
+   <div data-role="page" id="lang_box">
+   			<img class="headimage" src="images/besmart new.png">
+			<div class="bgimg"><img src="images/backgd_sun.gif"></div>
+	<a href="triviak.html" id="langkiny" rel="external" data-transition="fade"><img src="images/kinyarwanda.png"></a>
+	<a href="triviafre.html" id="langeng" rel="external" data-transition="fade"><img src="images/english.png"></a>
+	<a href="#game_box_trivia" id="langfre" data-transition="fade"><img src="images/french.png"></a>
+  
+   </div>
+
+
+<div data-role="page" id="game_box_trivia">
+         
+         <img src="images/preview.jpg" id="preview">
+         <img src="images/duck_timer.png" id="apple_fall">
+         <img src="images/timer_table.png" id="t_table">
+
+		<div id="try_again" data-rel="dialog">
+			<a href="#game_box_trivia" ><img class="restart" src="images/RESTART.png"></a>
+			
+			<img src="images/tryagain.png" id="try_again_image">
+
+					
+		</div>
+		<div id="good_work" data-rel="dialog">
+			<a href="#game_box_trivia" ><img class="restart" src="images/RESTART.png"></a>
+            <img src="images/goodjob.png" id="goodjob_image">
+					
+		</div>
+    <div id="count_marks">
+    	<img src="images/cloud.png" id="mycloud">
+    	<div id="count_marks_display">0/10</div>
+    </div>
+    <a href="#game_box_trivia"><img src="images/newrestart.png" id="newres"></a>
+	<div id="quest"></div>
+	<div class="triviabg">
+		
+		<div id="answer_one"></div>
+		<div id="answer_two"></div>
+		<div id="answer_three"></div>
+		<div id="answer_four" class="answer4"></div>
+		<div id="right_ans"><img src="images/right.png"></div>
+		<div id="wrong_ans"><img src="images/wrong.png"></div>
+	</div>
+
+</div>
+
+
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.soundjs-0.5.2.min.js"></script>
+<script type="text/javascript" src="js/trivia.js"></script>
+
+</body>
+</html>

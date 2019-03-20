@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone-no">
+	<meta name="viewport" content="user-scalable =no,initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width,
+	height=device-height,target-densitydpi=device-dpi">
+	<title>BeSMART</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.0.css">
+	
+</head>
+<body>
+<div data-role="page" id="game_box_trivia">
+         
+         <img src="images/preview.jpg" id="preview">
+         <img src="images/duck_timer.png" id="apple_fall">
+         <img src="images/timer_table.png" id="t_table">
+
+		<div id="try_again" data-rel="dialog">
+			<a href="#game_box_trivia" ><img class="restart" src="images/RESTART.png"></a>
+			
+			<img src="images/tryagain.png" id="try_again_image">
+
+					
+		</div>
+		<div id="good_work" data-rel="dialog">
+			<a href="#game_box_trivia" ><img class="restart" src="images/RESTART.png"></a>
+            <img src="images/goodjob.png" id="goodjob_image">
+					
+		</div>
+    <div id="count_marks">
+    	<img src="images/cloud.png" id="mycloud">
+    	<div id="count_marks_display">0/10</div>
+    </div>
+    <a href="#game_box_trivia"><img src="images/newrestart.png" id="newres"></a>
+	<div id="quest"></div>
+	<div class="triviabg">
+		
+		<div id="answer_one"></div>
+		<div id="answer_two"></div>
+		<div id="answer_three"></div>
+		<div id="answer_four"></div>
+		<div id="right_ans"><img src="images/right.png"></div>
+		<div id="wrong_ans"><img src="images/wrong.png"></div>
+	</div>
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.0.min.js"></script>
+<script type="text/javascript" src="js/trivialvl2.js"></script>
+</body>
+</html>
